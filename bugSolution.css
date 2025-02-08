@@ -1,0 +1,14 @@
+/* bugSolution.css */
+
+/* Instead of using calc(50% - 10px), use a more predictable approach.  For instance, if you need a width of 50% minus 10px,  consider using a combination of margin or padding to achieve the desired effect.*/
+.container {
+  width: 50%;
+  margin-right: 10px;
+}
+
+/* Or, if the 10px offset is crucial relative to the container's width, determine a pixel value that works across different screen sizes, and use it directly */
+.element {
+  width: 490px; /* Example.  Calculate appropriate value based on context */
+}
+
+/* Avoid complex nesting that involves calc() with mixed units. Consider restructuring the HTML and CSS for simpler calculations.*/
